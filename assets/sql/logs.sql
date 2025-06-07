@@ -1,0 +1,7 @@
+CREATE TABLE logs(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    acao VARCHAR(255) NOT NULL,
+    id_usuario INT,
+    detalhes TEXT,
+    data_acao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
