@@ -17,7 +17,7 @@
     //Função de registrar logs
     function registrarLog($acao, $id_usuarios = null, $detalhes=''){
         global $conn;
-        $stmt = $conn("INSERT INTO logs(acao, is_usuarios, detalhes) VALUES (?, ?, ?)");
+        $stmt = $conn("INSERT INTO logs(acao, id_usuarios, detalhes) VALUES (?, ?, ?)");
         $stmt-> bind_param("sis", $acao, $id_usuarios, $detalhes);
         $stmt -> execute();
         $stmt -> close();
