@@ -1,0 +1,139 @@
+
+    /* style.css */
+
+/* --- Configurações Gerais e Fundo (Reutilizado do estilo anterior) --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* --- Contêiner Principal para a Lista --- */
+.container_lista {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 960px; /* Maior para acomodar a tabela */
+    margin: 0 auto; /* Centraliza o contêiner */
+    box-sizing: border-box;
+}
+
+/* --- Título e Linha Horizontal (Reutilizado) --- */
+h2 {
+    text-align: center;
+    color: #1d2129;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin-bottom: 25px;
+}
+
+/* --- Barra de Ações (Novo Usuário, Ver logs) --- */
+.barra_acoes {
+    margin-bottom: 25px;
+    display: flex;
+    gap: 15px; /* Espaço entre os links */
+    align-items: center;
+}
+
+.barra_acoes a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+/* Botão de destaque para "Novo Usuário" */
+.barra_acoes a.botao_novo {
+    background-color: #007bff; /* Azul primário */
+    color: white;
+}
+.barra_acoes a.botao_novo:hover {
+    background-color: #0056b3;
+}
+
+/* Link secundário para "Ver logs" */
+.barra_acoes a.link_log {
+    color: #007bff;
+}
+.barra_acoes a.link_log:hover {
+    text-decoration: underline;
+}
+
+
+/* --- Estilo da Tabela --- */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços entre as células */
+    font-size: 0.95rem;
+}
+
+/* --- Cabeçalho da Tabela --- */
+thead th {
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+    border-bottom: 2px solid #dee2e6;
+}
+
+/* --- Células e Linhas do Corpo da Tabela --- */
+tbody td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+    vertical-align: middle; /* Alinha o conteúdo verticalmente */
+}
+
+/* Efeito de hover nas linhas */
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Remove a borda da última linha */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* --- Links na Tabela (Anexos e Ações) --- */
+td a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Botões de Ação (Editar e Excluir) */
+.acao_editar, .acao_excluir {
+    display: inline-block;
+    padding: 5px 10px;
+    color: white !important; /* Força a cor do texto a ser branca */
+    border-radius: 5px;
+    text-decoration: none !important; /* Remove o sublinhado */
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+.acao_editar:hover, .acao_excluir:hover {
+    opacity: 0.85;
+}
+
+.acao_editar {
+    background-color: #ffc107; /* Amarelo */
+}
+
+.acao_excluir {
+    background-color: #dc3545; /* Vermelho */
+}
